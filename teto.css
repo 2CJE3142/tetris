@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 25px);
+  grid-template-rows: repeat(20, 25px);
+  gap: 1px;
+  background: #333;
+  width: 251px;   /* 25px * 10 + 9px gap = 約251px */
+  height: 501px;  /* 25px * 20 + 19px gap = 約501px */
+  margin-top: 10px;
+}
+
+#grid div {
+  width: 25px;
+  height: 25px;
+  background: #000;
+}
+
+#reset-button {
+  margin-top: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+#game-over {
+  font-size: 1.8em;
+  margin-top: 15px;
+  color: red;
+}
+
+.I { background-color: cyan !important; }
+.J { background-color: blue !important; }
+.L { background-color: orange !important; }
+.O { background-color: yellow !important; }
+.S { background-color: green !important; }
+.T { background-color: purple !important; }
+.Z { background-color: red !important; }
